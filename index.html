@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown Previewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
@@ -12,15 +14,13 @@
     <div class="main">
         <div class="markdown-area">
             <div class="editor-container">
-                <button class="reset-btn">Reset</button>
+                <button class="reset-btn" id="reset-btn">Reset</button>
                 <textarea id="markdown" placeholder="Type Markdown here..."></textarea>
             </div>
             <div class="preview" id="preview"></div>
         </div>
     </div>
-
-
+    <script src="./src/script.js"></script>
 </body>
-
 </html>
 
